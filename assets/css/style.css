@@ -4,11 +4,7 @@
 
 :root {
 
-  /**
-   * colors
-   */
-
-  /* gradient */
+  /* colors gradient */
 
   --bg-gradient-onyx: linear-gradient(
     to bottom right, 
@@ -98,10 +94,6 @@
 
 }
 
-
-
-
-
 /*-----------------------------------*\
   #RESET
 \*-----------------------------------*/
@@ -143,10 +135,6 @@ input, textarea {
 html { font-family: var(--ff-poppins); }
 
 body { background: var(--smoky-black); }
-
-
-
-
 
 /*-----------------------------------*\
   #REUSED STYLE
@@ -279,10 +267,6 @@ article.active {
   z-index: -1;
 }
 
-
-
-
-
 /*-----------------------------------*\
   #MAIN
 \*-----------------------------------*/
@@ -292,10 +276,6 @@ main {
   margin-bottom: 75px;
   min-width: 259px;
 }
-
-
-
-
 
 /*-----------------------------------*\
   #SIDEBAR
@@ -430,12 +410,7 @@ main {
   font-size: 18px;
 }
 
-
 .social-item .social-link:hover { color: var(--light-gray); }
-
-
-
-
 
 /*-----------------------------------*\
   #NAVBAR
@@ -474,10 +449,6 @@ main {
 
 .navbar-link.active { color: var(--orange-yellow-crayola); }
 
-
-
-
-
 /*-----------------------------------*\
   #ABOUT
 \*-----------------------------------*/
@@ -493,11 +464,7 @@ main {
 
 .about-text p { margin-bottom: 15px; }
 
-
-
-/**
- * #service 
- */
+/* #service */
 
 .service { margin-bottom: 35px; }
 
@@ -543,9 +510,7 @@ main {
 }
 
 
-/**
- * #testimonials 
- */
+/** #testimonials */
 
 .testimonials { margin-bottom: 30px; }
 
@@ -595,9 +560,7 @@ main {
 }
 
 
-/**
- * #testimonials-modal
- */
+/** #testimonials-modal*/
 
 .modal-container {
   position: fixed;
@@ -708,10 +671,7 @@ main {
   line-height: 1.6;
 }
 
-
-/**
- * #clients 
- */
+/** #clients */
 
 .clients { margin-bottom: 15px; }
 
@@ -743,20 +703,13 @@ main {
 
 .clients-item img:hover { filter: grayscale(0); }
 
-
-
-
-
 /*-----------------------------------*\
   #project
 \*-----------------------------------*/
 
 .article-title { margin-bottom: 30px; }
 
-
-/**
- * education and experience 
- */
+/** education and experience */
 
 .timeline { margin-bottom: 30px; }
 
@@ -1054,10 +1007,7 @@ main {
   margin-top: 20px;
 }
 
-
 .project-github
-
-
 
 /*-----------------------------------*\
   #skills
@@ -1142,10 +1092,6 @@ main {
   font-weight: var(--fw-300);
   line-height: 1.6;
 }
-
-
-
-
 
 /*-----------------------------------*\
   #CONTACT
@@ -1250,56 +1196,36 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 .form-btn:disabled:hover::before { background: var(--bg-gradient-jet); }
 
-
-
-
-
 /*-----------------------------------*\
   #RESPONSIVE
 \*-----------------------------------*/
 
-/**
- * responsive larger than 450px screen
- */
+/** responsive larger than 450px screen */
 
 @media (min-width: 450px) {
 
-  /**
-   * client
-   */
+  /** client */
 
   .clients-item { min-width: calc(33.33% - 10px); }
 
 
 
-  /**
-   * #PORTFOLIO, BLOG 
-   */
+  /* #PORTFOLIO, BLOG */
 
   .project-img,
   .blog-banner-box { height: auto; }
 
 }
 
-
-
-
-
-/**
- * responsive larger than 580px screen
- */
+/* responsive larger than 580px screen */
 
 @media (min-width: 580px) {
 
-  /**
-   * CUSTOM PROPERTY
-   */
+  /* CUSTOM PROPERTY */
 
   :root {
 
-    /**
-     * typography
-     */
+    /* typography */
 
     --fs-1: 32px;
     --fs-2: 24px;
@@ -1308,14 +1234,9 @@ textarea.form-input::-webkit-resizer { display: none; }
     --fs-6: 15px;
     --fs-7: 15px;
     --fs-8: 12px;
-
   }
 
-
-
-  /**
-   * #REUSED STYLE
-   */
+  /* #REUSED STYLE */
 
   .sidebar, article {
     width: 520px;
@@ -1340,22 +1261,14 @@ textarea.form-input::-webkit-resizer { display: none; }
     font-size: 18px;
   }
 
-
-
-  /**
-   * #MAIN
-   */
+  /* #MAIN */
 
   main {
     margin-top: 60px;
     margin-bottom: 100px;
   }
 
-
-
-  /**
-   * #SIDEBAR
-   */
+  /* #SIDEBAR */
 
   .sidebar {
     max-height: 180px;
@@ -1396,11 +1309,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     width: calc(100% - 64px);
   }
 
-
-
-  /**
-   * #NAVBAR
-   */
+  /* #NAVBAR*/
 
   .navbar { border-radius: 20px 20px 0 0; }
 
@@ -1408,11 +1317,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .navbar-link { --fs-8: 14px; }
 
-
-
-  /**
-   * #ABOUT
-   */
+  /* #ABOUT*/
 
   .about .article-title { margin-bottom: 20px; }
 
@@ -1511,11 +1416,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .clients-item { min-width: calc(33.33% - 35px); }
 
-
-
-  /**
-   * #projec
-   */
+  /* #project */
 
   .timeline-list { margin-left: 65px; }
 
@@ -1529,11 +1430,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .skills-item:not(:last-child) { margin-bottom: 0px; }
 
-
-
-  /**
-   * #PORTFOLIO, BLOG
-   */
+  /* #PORTFOLIO, BLOG*/
 
   .project-img, .blog-banner-box { border-radius: 16px; }
 
@@ -1541,11 +1438,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .blog-content { padding: 25px; }
 
-
-
-  /**
-   * #CONTACT
-   */
+  /* #CONTACT*/
 
   .mapbox {
     height: 380px;
@@ -1570,48 +1463,26 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 }
 
-
-
-
-
-/**
- * responsive larger than 768px screen
- */
+/* responsive larger than 768px screen*/
 
 @media (min-width: 768px) {
 
-  /**
-   * REUSED STYLE
-   */
+  /* REUSED STYLE*/
 
   .sidebar, article { width: 700px; }
 
   .has-scrollbar::-webkit-scrollbar-button { width: 100px; }
 
-
-
-  /**
-   * SIDEBAR
-   */
+  /* SIDEBAR */
 
   .contacts-list {
     grid-template-columns: 1fr 1fr;
     gap: 30px 15px;
   }
 
-
-
-  /**
-   * NAVBAR
-   */
+  /* NAVBAR */
 
   .navbar-link { --fs-8: 15px; }
-
-
-
-  /**
-   * ABOUT
-   */
 
   /* testimonials modal */
 
@@ -1622,11 +1493,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .modal-avatar-box img { width: 80px; }
 
-
-
-  /**
-   * PORTFOLIO
-   */
+  /* PORTFOLIO */
 
   .article-title { padding-bottom: 20px; }
 
@@ -1655,11 +1522,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .project-list, .blog-posts-list { grid-template-columns: 1fr 1fr; }
 
-
-
-  /**
-   * CONTACT
-   */
+  /* CONTACT*/
 
   .input-wrapper { grid-template-columns: 1fr 1fr; }
 
@@ -1670,25 +1533,15 @@ textarea.form-input::-webkit-resizer { display: none; }
   
 }
 
-
-
-
-
-/**
- * responsive larger than 1024px screen
- */
+/* responsive larger than 1024px screen */
 
 @media (min-width: 1024px) {
 
-  /**
-   * CUSTOM PROPERTY
-   */
+  /* CUSTOM PROPERTY */
 
   :root {
 
-    /**
-    * shadow
-    */
+    /* shadow */
 
     --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.125);
     --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.125);
@@ -1696,22 +1549,14 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   }
 
-
-
-  /**
-   * REUSED STYLE
-   */
+  /* REUSED STYLE */
 
   .sidebar, article {
     width: 950px;
     box-shadow: var(--shadow-5);
   }
 
-
-
-  /**
-   * MAIN 
-   */
+  /* MAIN  */
 
   main { margin-bottom: 60px; }
 
@@ -1721,11 +1566,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     margin: auto;
   }
 
-
-
-  /**
-   * NAVBAR
-   */
+  /* NAVBAR */
 
   .navbar {
     position: absolute;
@@ -1746,11 +1587,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .navbar-link { font-weight: var(--fw-500); }
 
-
-
-  /**
-   * ABOUT
-   */
+  /* ABOUT */
 
   /* service */
 
@@ -1767,37 +1604,21 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .clients-item { min-width: calc(25% - 38px); }
 
-
-
-  /**
-   * PORTFOLIO
-   */
+  /* PORTFOLIO */
 
   .project-list { grid-template-columns: repeat(3, 1fr); }
 
-
-
-  /**
-   * BLOG
-   */
+  /* BLOG */
 
   .blog-banner-box { height: 230px; }
 
 }
 
-
-
-
-
-/**
- * responsive larger than 1250px screen
- */
+/* responsive larger than 1250px screen */
 
 @media (min-width: 1250px) {
 
-  /**
-   * RESET
-   */
+  /* RESET */
 
   body::-webkit-scrollbar { width: 20px; }
 
@@ -1815,21 +1636,13 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   body::-webkit-scrollbar-button { height: 60px; }
 
-
-
-  /**
-   * REUSED STYLE
-   */
+  /* REUSED STYLE */
 
   .sidebar, article { width: auto; }
 
   article { min-height: 100%; }
 
-
-
-  /**
-   * MAIN
-   */
+  /* MAIN */
 
   main {
     max-width: 1200px;
@@ -1846,11 +1659,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     margin: 0;
   }
 
-
-
-  /**
-   * SIDEBAR
-   */
+  /* SIDEBAR */
 
   .sidebar {
     position: sticky;
@@ -1900,11 +1709,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .social-list { justify-content: center; }
 
-
-
-  /**
-	 * project
-	 */
+  /* project */
 
   .timeline-text { max-width: 700px; }
 
