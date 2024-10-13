@@ -817,47 +817,71 @@ main {
   line-height: 1.6;
 }
 
-
-/**
- * skills 
- */
-
-.skills-title { margin-bottom: 20px; }
-
-.skills-list { padding: 20px; }
-
-
-.skills-item:not(:last-child) { margin-bottom: 15px; }
-
-.skill .title-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  margin-bottom: 8px;
+/* Skills List Grid Layout */
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
 }
 
-.skill .title-wrapper data {
-  color: var(--light-gray);
-  font-size: var(--fs-7);
-  font-weight: var(--fw-300);
+.skills-item {
+  background-color: var(--eerie-black-2);
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  position: relative;
+  transition: box-shadow 0.3s ease;
+  overflow: visible; /* Ensure that circle is not cut off */
 }
 
-.skill-progress-bg {
-  background: var(--jet);
-  width: 100%;
-  height: 8px;
-  border-radius: 10px;
+/* Circular Progress Bar Styles */
+.circle {
+  position: relative;
+  margin-bottom: 15px;
 }
 
-.skill-progress-fill {
-  background: var(--text-gradient-yellow);
-  height: 100%;
-  border-radius: inherit;
+.progress-ring {
+  transform: rotate(-90deg); /* Rotate the circle so it starts from the top */
+  overflow: visible; /* Make sure the circle stays visible */
 }
 
+/* Full Circle Outline (White) */
+.progress-ring__circle-bg {
+  stroke-dasharray: 301.44; /* Total circumference */
+  stroke-dashoffset: 0;
+  stroke-width: 4;
+  stroke: hsl(240, 1%, 17%);; /* Unfilled part of the circle (white color) */
+}
 
+/* Yellow progress is now default */
+.progress-ring__circle {
+  stroke: var(--orange-yellow-crayola); /* Yellow progress bar */
+  stroke-dasharray: 301.44; /* Total circumference */
+  stroke-dashoffset: calc(301.44 - (301.44 * var(--percent)) / 100); /* Progress fill */
+  stroke-width: 4;
+  transition: stroke-dashoffset 0.5s ease-in-out;
+}
 
+.percentage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.2rem;
+  color: var(--orange-yellow-crayola); /* Yellow color for percentage text */
+  font-weight: bold;
+}
 
+/* Subtle hover effect: glowing effect around the item, not changing the bar */
+.skills-item:hover {
+  box-shadow: 0 0 20px rgba(255, 223, 0, 0.3); /* Glow around the skill item */
+}
+
+/* Hover effect just enhances the glow around the circle, but does not change its color */
+.skills-item:hover .progress-ring__circle {
+  stroke-width: 6; /* Thicker stroke on hover */
+  box-shadow: 0px 0px 10px rgba(255, 223, 0, 0.8); /* Slight glow around the progress bar */
+}
 
 /*-----------------------------------*\
   #PORTFOLIO
@@ -1498,7 +1522,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     left: -43px;
   }
 
-  .skills-item:not(:last-child) { margin-bottom: 25px; }
+  .skills-item:not(:last-child) { margin-bottom: 0px; }
 
 
 
